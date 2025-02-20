@@ -1,17 +1,22 @@
 // STEP 1a: Create reference for button element 'btn'
-
+const btn = document.querySelector("button");
 // STEP 1b: Create reference for primary heading 'h1'
-
+const h1 = document.querySelector("h1");
 
 // STEP 3: Build an onclick event handler for 'btn' that invokes the displayMessage() function
-
+btn.onclick = function() {
+    console.log("Function called!");
+    displayMessage();
+};
 
 // STEP 8d: Set the h1 element to the above color returned by the displayMessage function
 
 // STEP 2: Create a function called displayMessage()
+function displayMessage() {
+    console.log("Yay!")
 
     // STEP 3a: Create a P element referenced by var msgPanel
-    
+    let msgPanel = document.createElement("p")
     // STEP 3b: Add a class attribute, "msgPanel" (refer to the CSS above)
         
     // STEP 3c: Insert the message text into the new paragraph element
@@ -46,6 +51,6 @@
 
 
     // Next, open up the provided code for Lab 5 and review the instructions for the challenge.
-
+};
 
 // This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Build_your_own_function
