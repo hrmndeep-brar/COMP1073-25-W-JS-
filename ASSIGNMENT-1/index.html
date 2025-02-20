@@ -1,0 +1,24 @@
+<!--First step is to create a simple structured html page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harman's Storymaker</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Make your own story</h1>
+    <div class="button-container">
+      <button class="story-button purple" onclick="cycleWord(0)"></button>
+      <button class="story-button blue" onclick="cycleWord(1)"></button>
+      <button class="story-button green" onclick="cycleWord(2)"></button>
+      <button class="story-button orange" onclick="cycleWord(3)"></button>
+      <button class="story-button pink" onclick="cycleWord(4)"></button>
+    </div>
+    <div id="wordDisplay">Your Story Appears Here</div>
+    <button id="randomStory" onclick="generateStory()">Random Story</button>
+  </div>
+  
+</body>
+</html>
